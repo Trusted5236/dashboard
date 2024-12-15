@@ -1,4 +1,4 @@
-import profile from '../assets/WhatsApp Image 2024-12-13 at 13.00.54_33ea7b53.jpg'
+import profile from '../assets/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail-removebg-preview (1).png'
 export default function Account(){
     
     return(

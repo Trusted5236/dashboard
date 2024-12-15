@@ -3,7 +3,7 @@ import icon2 from "../assets/tabler-icon-background.svg"
 import icon3 from "../assets/tabler-icon-mail.svg"
 import icon4 from "../assets/tabler-icon-moneybag.svg"
 import icon5 from "../assets/Vector (1).svg"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 export default function SideBar(){
 
@@ -11,7 +11,7 @@ export default function SideBar(){
         <div className="bg-zinc-800 rounded-[0.8rem] w-[100%] h-auto py-[8rem] px-[1.5rem]">
                 
             <div className="flex flex-col justify-start items-start gap-y-3">
-            <NavLink to={"/"}>
+            <NavLink to={"/"} className={({isActive})=>isActive ?"bg-slate-600 rounded-r-lg p-2 transition-all duration-500 ease-in-out" : ""}>
 
                <div className="flex flex-row items-start gap-x-[0.5rem] w-[100%] h-auto justify-start">
 
@@ -27,7 +27,7 @@ export default function SideBar(){
                </div>
              </NavLink>
 
-             <NavLink to={"expenses"}>
+             <NavLink to={"expenses"} className={({isActive})=>isActive ?"bg-slate-600 rounded-r-lg p-2 transition-all duration-500 ease-in-out" : ""}>
                <div className="flex flex-row items-start gap-x-2">
 
                 <div className="w-fit h-auto">
@@ -43,8 +43,8 @@ export default function SideBar(){
              </NavLink>
 
 
-             <NavLink to={"sms"}>
-               <div className="flex flex-row items-start gap-x-2">
+             <NavLink to={"sms"} className={({isActive})=>isActive ?"bg-slate-600 rounded-r-lg p-2 transition-all duration-500 ease-in-out" : ""}>
+               <div className="flex flex-row items-start gap-x-2 ">
 
                 <div className="w-fit h-auto">
                         <img src={icon3}/>
@@ -59,8 +59,8 @@ export default function SideBar(){
              </NavLink>
 
 
-             <NavLink to={"investments"}>
-               <div className="flex flex-row items-start gap-x-2">
+             <NavLink to={"investments"} className={({isActive})=>isActive ?"bg-slate-600 rounded-r-lg p-2 transition-all duration-500 ease-in-out" : ""}>
+               <div className="flex flex-row items-start gap-x-2 ">
 
                 <div className="w-fit h-auto">
                         <img src={icon4}/>
@@ -75,7 +75,7 @@ export default function SideBar(){
              </NavLink>
 
 
-             <NavLink to={"settings"}>
+             <NavLink to={"settings"} className={({isActive})=>isActive ?"bg-slate-600 rounded-r-lg p-2 transition-all duration-500 ease-in-out" : ""}>
                <div className="flex flex-row items-start gap-x-2">
 
                 <div className="w-fit h-auto">
